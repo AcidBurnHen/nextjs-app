@@ -1,18 +1,23 @@
-import Head from "next/head";
-
+// Components
+import Head from "./modules/Head";
 import Header from "./modules/Header";
+import HomeBanner from "./modules/HomeBanner";
+import BurgerChef from "./modules/BurgerChef";
+import CostumerReviews from "./modules/CostumerReviews";
+import TrendingRecipes from "./modules/TrendingRecipes";
+import Footer from "./modules/Footer";
 
 function Home() {
   return (
-    <div>
-      <Head>
-        <title>Burger Hall</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="keywords" content="Best burgers, burger recipes, burger lovers" />
-        <meta name="description" content="Burger Hall. Favorite recipes of burger lovers" />
-      </Head>
+    <>
+      <Head />
       <Header />
-    </div>
+      <HomeBanner />
+      <BurgerChef />
+      <CostumerReviews />
+      <TrendingRecipes />
+      <Footer />
+    </>
   );
 }
 
